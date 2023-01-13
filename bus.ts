@@ -16,7 +16,7 @@ function calculatePassengers(stops: number, abord: number, entered: number[], ex
 }
 
 const stops = 5;
-const abord = 8;
+const abord = 4;
 const entered = [2,4,1,0,5];
 const exited = [3,2,5,7,2];
 
