@@ -19,7 +19,7 @@ const stops = 5;
 const abord = 4;
 const entered = [2,4,1,0,5];
 const exited = [3,2,5,7,2];
-
+const somme = abord + entered.reduce((a, b) => a + b, 0); 
 const final_result = calculatePassengers(stops, abord, entered, exited);
 
 if(final_result < 0){
@@ -29,3 +29,5 @@ if(final_result < 0){
 }else {
     console.log(`Au finale, il y a donc ${final_result} passagers dans le bus \n`);
 }
+
+console.log(`La somme des passagers qui sont entrés dans le bus est: ${somme} \n`);
