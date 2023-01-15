@@ -15,12 +15,13 @@ function calculatePassengers(stops: number, abord: number, entered: number[], ex
   return passengers;
 }
 
-const stops = 5;
-const abord = 4;
-const entered = [2,4,1,0,5];
-const exited = [3,2,5,7,2];
+const stops = 6;
+const abord = 8;
+const entered = [2,4,1,0,5,2];
+const exited = [3,2,5,7,2,0];
 const somme = abord + entered.reduce((a, b) => a + b, 0); 
 const final_result = calculatePassengers(stops, abord, entered, exited);
+const recette = somme*600;
 
 if(final_result < 0){
     console.log(`Au finale, il n'y a plus de passager dans le bus \n`);
@@ -31,3 +32,4 @@ if(final_result < 0){
 }
 
 console.log(`La somme des passagers qui sont entrés dans le bus est: ${somme} \n`);
+console.log(`La recette du tour est: ${recette} Ar.\n`);
